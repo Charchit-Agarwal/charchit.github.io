@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Journey-Train booking website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    
+
+    <!--header section starts-->
+    <section class="header" >
+        <a href="#home" class="logo">Easy Journey</a>
+        <nav class="navbar">   
+        <a href="#home">Home</a>
+        <a href="#book">Book</a>
+        <a href="#about">about</a>
+        <a href="#footer">Contact</a>
+        <a href="#register/login" style="background-color: #bcc7a7; border-radius: 10px;">Register/Login</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+    <!--header section ends-->
+    <h1 id="trainData" style="text-align:center; font-size:35px;">Train Data after Search</h1>
+    <div class="container">
+    <table style="width:80%; text-align:center; font-size:15px; margin-left:150px;">
+        <thead>
+          <tr>
+            <th scope="col">Train Name</th>
+            <th scope="col">Train Number</th>
+            <th scope="col">Departure Time</th>
+            <th scope="col">Arrival Time</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+         <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+         </tr>
+        </tbody>
+      </table>
+    </div>        
+        </tbody>
+      </table>
+    </div>
+    <!--home section starts-->
+    <section class="home" id="home" >
+
+        <div class="home-slider">
+            <div class="w">
+                <div class="slide" style="background:url('images/pexels-daniel-frese-543223.jpg') no-repeat;">
+                    <div class="content">
+                        <span>book your train tickets easily and efficiently</span>
+                        <h3>ease your journey with easy journey</h3>
+                        <a href="#book" class="btn">Book now</a>
+                    </div>
+                </div>
+            
+            <div class="slide" style="background: url('images/pexels-elena-saharova-5098043.jpg') no-repeat;">
+                <div class="content">
+                    <span>book your train tickets easily and efficiently</span>
+                    <h3>ease your journey with easy journey</h3>
+                    <a href="#book" class="btn">Book now</a>
+                </div>
+            </div>
+            
+            <div class="slide" style="background: url('images/background2.jpg') no-repeat;">
+                <div class="content">
+                    <span>book your train tickets easily and efficiently</span>
+                    <h3>ease your journey with easy journey</h3>
+                    <a href="#book" class="btn">Book now</a>
+                </div>
+                </div>
+            </div>
+        <div class="button-next"></div>
+        <div class="button-prev"></div>
+    </div>
+
+    </section>
+    <!--home section ends-->
+
+
+        
+
+        <!-- <section class="services">
+            <h1 class="heading-title">our services</h1>
+
+
+            <div class="box-container">
+
+            <div class="box">
+                <img src="" alt="">
+                <h3>adventure</h3>
+                </div>
+
+            <div class="box">
+                <img src="" alt="">
+                <h3>tour guide</h3>
+            </div>
+
+            <div class="box">
+                <img src="" alt="">
+                <h3>camp fire</h3>
+            </div>
+
+            <div class="box">
+                <img src="" alt="">
+                <h3>treking</h3>
+            </div>
+
+            <div class="box">
+                <img src="" alt="">
+                <h3>off road</h3>
+            </div>
+
+            <div class="box">
+                <img src="" alt="">
+                <h3>camping</h3>
+            </div>
+
+            </div>
+        </section>
+
+        services section ends-->
+
+        
+        <!--booking section starts-->
+            <section class="booking" id="book" style="background: url('images/pexels-robert-so-14110334.jpg') no-repeat center; background-size: cover;">
+                <h1 class="heading-title" >book ticket</h1>
+                <form methot="post" class="book-form">
+                    <div class="flex">
+                            <div class="input-box">
+                                <span>name :</span>
+                                <input type="text" placeholder="Enter your Name" name="name">
+                                </div>
+                            <div class="input-box">
+                                <span>email :</span>
+                                <input type="email" placeholder="Enter your email" name="email">
+                            </div>
+                            <div class="input-box">
+                                <span>where from(station code) :</span>
+                                <input type="text" placeholder="Boarding from" name="location" id="from" required>
+                            </div>
+                            <div class="input-box">
+                                <span>where from(station name) :</span>
+                                <input type="text" placeholder="Boarding from" name="location" id="WFSN">
+                            </div>
+                            <div class="input-box">
+                                <span>where to(station code) :</span>
+                                <input type="text" placeholder="Boarding to" name="location" id="to" required>
+                            </div>
+                            <div class="input-box">
+                                <span>where to(station name) :</span>
+                                <input type="text" placeholder="Boarding to" name="location" id="WTSN">
+                            </div>
+                            <div class="input-box">
+                                <span>how many :</span>
+                                <input type="number" placeholder="Number of passengers" name="guests">
+                            </div>
+                            <div class="input-box">
+                                <span>Date :</span>
+                                <input type="date" name="leaving"id="date" required>
+                            </div>
+                  
+
+                    </div>
+ <button id="btnsearch" class="btn">Search</button>
+
+                </form>
+            </section>
+
+            <!--booking secction ends-->
+
+
+            <!--review section starts-->
+
+        <section class="reviews" id="reviews" style="background: url('images/home.jpg') no-repeat center; background-size: cover;">
+            <h1 class="heading-title">top reviews!!</h1>
+            <div class="reviews-slider">
+
+                <div class="w">
+
+                    <div class="slide">
+                        <div class="stars">
+                            <i class="fas fa-stars"></i>
+                            <i class="fas fa-stars"></i>
+                            <i class="fas fa-stars"></i>
+                            <i class="fas fa-stars"></i>
+                            <i class="fas fa-stars"></i>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illo minima aliquid tenetur ipsam. Id debitis enim nobis iure dolorem dolor aliquid optio expedita rerum vel velit quisquam, temporibus obcaecati?
+                        </p>
+                        <h3>Chris paul</h3>
+                       <img src="images/Chris paul.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <div class="stars">
+                            <i class="fas fa-stars"></i>
+                            <i class="fas fa-stars"></i>
+                            <i class="fas fa-stars"></i>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum saepe ea sint repellendus officia magni fugit dignissimos explicabo eveniet vitae.
+                        </p>
+                        <h3>Brendon Mcullum</h3>
+                       <img src="images/brendon.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <div class="stars">
+                            <i class="fas fa-stars"></i>
+                            <i class="fas fa-stars"></i>
+                            <i class="fas fa-stars"></i>
+                            <i class="fas fa-stars"></i>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos qui aspernatur libero. Explicabo, eveniet. Qui quibusdam nihil delectus labore pariatur velit quidem eligendi quae rem doloribus! Hic neque suscipit, amet qui aspernatur autem inventore architecto.
+                        </p>
+                        <h3>Sadie Sink</h3>
+                        <img src="images/sadie.jpg" alt="">
+                    </div>
+
+               </div>
+            </div>
+        </section>
+        <!--review section ends-->
+
+
+
+
+        <!--about us section starts-->
+        <div class="heading-title" id="about">
+        <h1>about us</h1>
+        </div>
+        <section class="about" > 
+            <div class="image">
+                <img src="images/trust.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>why choose us?</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste obcaecati dicta exercitationem totam, est unde? Aperiam amet eum voluptatibus ex dolor cupiditate esse ullam perspiciatis velit, fugit accusamus. Itaque, molestiae!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti sed nemo omnis accusantium. Iure corporis officia quaerat eius assumenda?</p>
+                    <div class="icons-container">
+                        <div class="icons">
+                            <i class="fas fa-map"></i>
+                            <span>top travels</span>
+                        </div>
+                        <div class="icons">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <span>affordable price</span>
+                        </div>
+                        <div class="icons">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 guide service</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!--about us section ends-->
+
+    
+
+
+
+
+<!--Sign in/sign up starts-->
+
+<div class="hero" id="register/login">
+    <h1 class="heading-title">register/login</h1>
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">register</button>
+        </div>
+        <div class="social-icons">
+            <img src="icons/icons8-facebook-48.png" alt="">
+            <img src="icons/icons8-twitter-48.png" alt="">
+            <img src="icons/icons8-google-48.png" alt="">
+        </div>
+        <form id="login1" class="input-group">
+            <input type="email" id="login_email" class="input-field" placeholder="email id" required>    
+            <input type="text" class="input-field" id="login_password" placeholder="enter password" required>
+            <input type="checkbox" class="check-box"><span>remember password</span>
+            <button type="submit" id="login" class="submit-btn">log in</button>
+        </form>
+        <form id="register1" class="input-group">
+            <input type="email" id="email" class="input-field" placeholder="email id" required>
+            <input type="text" class="input-field" id="password" placeholder="enter password" required>
+            <input type="checkbox" class="check-box"><span>i agree to the terms & conditions</span>
+            <button type="submit" id="register" class="submit-btn">register</button>
+        </form>
+    </div>
+</div>
+<!--Sign in/sign up ends-->
+
+        <!--footer section starts-->
+        <h1 class="heading-title" id="footer">contact us</h1>
+        <section class="footer" >
+
+            <div class="box-container">
+    
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#home"><i class="fas fa-angle-right"></i>Home</a>
+                    <a href="#about"><i class="fas fa-angle-right"></i>About</a>
+                    <a href="#reviews"><i class="fas fa-angle-right"></i>Reviews</a>
+                    <a href="#book"><i class="fas fa-angle-right"></i>Book</a>
+                </div>
+    
+                <div class="box">
+                    <h3>extra links</h3>
+                    <a href="#"><i class="fas fa-angle-right"></i>ask question</a>
+                    <a href="#"><i class="fas fa-angle-right"></i>about us</a>
+                    <a href="#"><i class="fas fa-angle-right"></i>privacy policy</a>
+                    <a href="#"><i class="fas fa-angle-right"></i>terms of use</a>
+                </div>
+    
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#"><i class="fas fa-phone"></i>+91-8127228112</a>
+                    <a href="#"><i class="fas fa-phone"></i>+123-111-222-3333</a>
+                    <a href="#"><i class="fas fa-envelope"></i>111@gmail.com</a>
+                    <a href="#"><i class="fas fa-map"></i>ISM DHANBAD,86004</a>
+                </div>
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#"><i class="fas fa-facebook-f"></i>facebook</a>
+                    <a href="#"><i class="fas fa-twitter"></i>twitter</a>
+                    <a href="#"><i class="fas fa-instagram"></i>instagram</a>
+                    <a href="#"><i class="fas fa-linkedin"></i>linkedin</a>
+                </div>
+            </div>
+            <div class="credit">created by <span>Easy journey cooperation </span>| all rights reserved !</div>
+        </section>
+        <!--footer section ends-->
+
+
+       
+    <script src="main.js"></script>
+    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-analytics.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-auth.js";
+        
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDr8BJy8MMA0YuDoVR_YxKflbZQ4UQQlHo",
+          authDomain: "easy-journey-3933e.firebaseapp.com",
+          projectId: "easy-journey-3933e",
+          storageBucket: "easy-journey-3933e.appspot.com",
+          messagingSenderId: "816765448323",
+          appId: "1:816765448323:web:a4a07028aa91ce7c406bb6",
+          measurementId: "G-7CSTY4GE9V"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth();
+        console.log(app);
+
+         //----- New Registration code start	  
+	  document.getElementById("register").addEventListener("click", function() {
+        var email =  document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        //For new registration
+        createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in 
+          const user = userCredential.user;
+          console.log(user);
+          alert("Registration successfully!!");
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          // ..
+          // console.log(errorMessage);
+          //alert(error);
+        });		  		  
+    });
+    //----- End
+
+//----- Login code start	  
+document.getElementById("login").addEventListener("click", function() {
+  var email =  document.getElementById("login_email").value;
+  var password = document.getElementById("login_password").value;
+
+  signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    console.log(user);
+    alert(user.email+" Login successfully!!!");
+    //document.getElementById('login').style.display = 'block';
+    window.location = "index.html";
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log(errorMessage);
+    alert(errorMessage);
+  });		  		  
+});
+
+
+    //----- End
+
+    //----- Logout code start	
+    // document.getElementById("logout").addEventListener("click", function() {
+      //  signOut(auth).then(() => {
+            // Sign-out successful.
+      //	  console.log('Sign-out successful.');
+      //	  alert('Sign-out successful.');
+      //	  document.getElementById('logout').style.display = 'none';
+      //	}).catch((error) => {
+      //	  // An error happened.
+      //	  console.log('An error happened.');
+      //	});		  		  
+    //});
+    //----- End  
+    
+
+      </script>
+	  
+</body>
+</html>
